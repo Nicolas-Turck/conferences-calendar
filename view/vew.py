@@ -4,18 +4,20 @@ class Display():
         self.choice = None
 
     def speakers_choice(self):
+        user = Managespeakers()
         while self.choice != "q":
             self.choice = input("\033[36m(c) for create \n (d) for delete \n (s) for see\033[0m")
             if self.choice == "c":
                 name = input("\033[32menter name:\033[0m")
-                lastname = input("\033[32menter lastname:\033[m")
+                lastname = input("\033[32menter lastname:\033[0m")
                 description = input("\033[32menter decription:\033[0m")
                 job = input("\033[32menter job:\033[0M")
-                speakers = Managespeakers(name, lastname, description, job)
-                speakers.create_speakers()
+                user.create_speakers(name, lastname, description, job)
 
             if self.choice == "d":
-                print("delette")
+                id = input("\033[32menter speakers ID :\033[0m")
+                user.delete_speakers(id)
+
 
             if self.choice == "s":
                 print("see speakers")
