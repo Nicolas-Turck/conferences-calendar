@@ -1,7 +1,7 @@
 import psycopg2
 import psycopg2.extras
 
-class connection():
+class Connection():
     """class for connect and close the database
     and addinf user port and database in attributes of classe"""
     USER = "eder"
@@ -16,7 +16,7 @@ class connection():
     def initialize_connection(self):
         """method for initialyse the connection to the database """
         try:
-            self.connection = psycopg2.connect(user = connection.USER, port = connection.PORT, database = connection.DATABASE)
+            self.connection = psycopg2.connect(user = Connection.USER, port = Connection.PORT, database = Connection.DATABASE)
             self.cursor = self.connection.cursor(cursor_factory=psycopg2.extras.DictCursor)
         except (Exception, psycopg2.Error) as error:
             print("error no connecting PostgreSQL", error)
