@@ -64,7 +64,25 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="WindowStateProjectService">
+    <state width="1238" height="186" key="GridCell.Tab.0.bottom" timestamp="1581436409972">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1238" height="186" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1581436409972" />
+    <state width="1238" height="186" key="GridCell.Tab.0.center" timestamp="1581436409970">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1238" height="186" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1581436409970" />
+    <state width="1238" height="186" key="GridCell.Tab.0.left" timestamp="1581436409969">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1238" height="186" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1581436409969" />
+    <state width="1238" height="186" key="GridCell.Tab.0.right" timestamp="1581436409971">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1238" height="186" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1581436409971" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/conderences_calendar$main.coverage" NAME="main Coverage Results" MODIFIED="1581436351158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../conferences-calendar" />
+    <SUITE FILE_PATH="coverage/conderences_calendar$main.coverage" NAME="main Coverage Results" MODIFIED="1581436404630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../conferences-calendar" />
   </component>
 </project>
