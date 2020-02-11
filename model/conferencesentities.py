@@ -1,11 +1,14 @@
-from model.manage_speakers import*
+from model.manage_conferences import*
 class Hydrate():
     """class for hydrate attribut before print them"""
     def __init__(self, datta = False):
         """method for initialise atrributs """
-        self.name= None
-        self.lastname = None
-        self.job = None
+        #self.name= None
+        #self.lastname = None
+        self.title = None
+        self.date = None
+        self.hour = None
+        self.summary = None
         self.hydrate(datta)
 
     def hydrate(self, datta):
@@ -16,4 +19,4 @@ class Hydrate():
 
     def __str__(self):
         """method for display elem of city"""
-        return "\033[34mname: {}, lastname: {}, job: {}  \033[0m" .format(self.name, self.lastname, self.job,)
+        return "\033[34mtitle: {}\ndate: {}, hour: {}\nsummary: {}\033[0m" .format(self.title, self.date, self.hour, self.summary)

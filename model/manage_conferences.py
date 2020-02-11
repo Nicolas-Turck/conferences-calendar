@@ -1,9 +1,40 @@
 import datetime
-class managesconferences():
+from model.connection import *
+from model.conferencesentities import *
+class Managesconferences():
     def __init__(self):
+        self.db = Connection()
         self.title = None
         self.summary = None
         self.date = None
         self.hour = None
         self.creation_date = datetime.date.today()
 
+    def create_conferences(self, title, summary, date, hour, speaker):
+        """method for add conferences in bdd"""
+        self.db.initialize_connection()
+        sql = "INSERT INTO conferences(title, summary, date, hour, creation_date, speaker_id) VALUES (%s, %s, %s, %s, %s, %s);"
+        arguments = (title, summary, date, hour, self.creation_date, speaker,)
+        self.db.cursor.execute(sql, arguments)
+        self.db.connection.commit()
+        self.db.close_connection()
+
+    def delete_speakers(self, id):
+        """method for delete conferences in bdd with this personal id"""
+        self.db.initialize_connection()
+        sql = "DELETE FROM speakers WHERE id = %s;"
+        arguments = (id)
+        self.db.cursor.execute(sql, arguments)
+        self.db.connection.commit()
+        self.db.close_connection()
+
+    def show_conferences(self):
+        """method for display all conferences"""
+        sql = "SELECT * FROM conferences;"
+        self.db.initialize_connection()
+        self.db.cursor.execute(sql,)
+        datta = self.db.cursor.fetchall()
+        self.db.close_connection()
+        for key, value in enumerate(datta):
+            datta[key] = Hydrate(value)
+        return datta

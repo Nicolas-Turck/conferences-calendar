@@ -1,13 +1,15 @@
 from model.manage_speakers import *
+from model.manage_conferences import *
 class Display():
     speakers = Managespeakers()
+    conf = Managesconferences()
     def __init__(self):
         self.choice = None
 
     def speakers_choice(self):
         user = Managespeakers()
         while self.choice != "q":
-            self.choice = input("\033[36m(c) for create \n (d) for delete \n (s) for see\033[0m")
+            self.choice = input("\033[35m(c) for create \n(d) for delete \n(s) for see:\033[0m")
             if self.choice == "c":
                 name = input("\033[32menter name:\033[0m")
                 lastname = input("\033[32menter lastname:\033[0m")
@@ -21,7 +23,6 @@ class Display():
 
 
             if self.choice == "s":
-                #speakers = Managespeakers()
                 datta = self.speakers.show_speakers()
                 if datta:
                     for elem in datta:
@@ -30,16 +31,24 @@ class Display():
             if self.choice == "q":
                 exit()
     def conferences_choice(self):
+        user = Managesconferences()
         while self.choice != "q":
-            self.choice = input("\033[33m(c) for create \n (d) for delete \n (s) for see\033[0m")
+            self.choice = input("\033[35m(c) for create \n(d) for delete \n(s) for see\033[0m")
             if self.choice == "c":
-                print("create")
-
+                title = input("\033[33menter title:\033[0m")
+                summary = input("\033[33menter summary:\033[0m")
+                date = input("\033[33menter date:\033[0m")
+                hour = input("\033[33menter hour \033[0m")
+                speaker = input("\033[33menter speaker ID: \033[0m")
+                user.create_conferences(title, summary, date, hour, speaker)
             if self.choice == "d":
                 print("delette")
 
             if self.choice == "s":
-                print("see speakers")
+                datta = self.conf.show_conferences()
+                if datta:
+                    for elem in datta:
+                        print(elem)
 
             if self.choice == "q":
                 exit()
