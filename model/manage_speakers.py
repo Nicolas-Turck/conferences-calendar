@@ -1,4 +1,4 @@
-
+from model.speakersentities import *
 from model.connection import *
 class Managespeakers():
     def __init__(self):
@@ -21,6 +21,16 @@ class Managespeakers():
         self.db.cursor.execute(sql, arguments)
         self.db.connection.commit()
         self.db.close_connection()
+
+    def show_speakers(self):
+        sql = "SELECT * FROM speakers;"
+        self.db.initialize_connection()
+        self.db.cursor.execute(sql,)
+        datta = self.db.cursor.fetchall()
+        self.db.close_connection()
+        for key, value in enumerate(datta):
+            datta[key] = Hydrate(value)
+        return datta
 
 
 

@@ -1,5 +1,6 @@
 from model.manage_speakers import *
 class Display():
+    speakers = Managespeakers()
     def __init__(self):
         self.choice = None
 
@@ -20,7 +21,11 @@ class Display():
 
 
             if self.choice == "s":
-                print("see speakers")
+                #speakers = Managespeakers()
+                datta = self.speakers.show_speakers()
+                if datta:
+                    for elem in datta:
+                        print(elem)
 
             if self.choice == "q":
                 exit()
