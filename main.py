@@ -1,16 +1,19 @@
 import os
+from view.vew import *
+user = Display()
+
 choice = ""
 if __name__=='__main__':
     while choice != "q":
-        choice = input("enter your choice \n "
+        choice = input("\033[36menter your choice \n "
                        "(a) for manage confereces "
-                       "\n (b) for manange speakers "
-                       "\n (q) for exit :")
+                       "\n (b) for manage speakers "
+                       "\n (q) for exit :\033[0m")
         if choice == "a":
-            pass
+            user.conferences_choice()
 
         if choice == "b":
-            pass
+            user.speakers_choice()
 
 
         if choice == "q":

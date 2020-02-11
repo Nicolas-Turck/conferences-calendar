@@ -6,7 +6,7 @@ class Connection():
     and addinf user port and database in attributes of classe"""
     USER = "eder"
     PORT = "5432"
-    DATABASE = "user_account"
+    DATABASE = "conferencescalendar"
 
     def __init__(self):
         """"""
