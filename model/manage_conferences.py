@@ -13,7 +13,8 @@ class Managesconferences():
     def create_conferences(self, title, summary, date, hour, speaker):
         """method for add conferences in bdd"""
         self.db.initialize_connection()
-        sql = "INSERT INTO conferences(title, summary, date, hour, creation_date, speaker_id) VALUES (%s, %s, %s, %s, %s, %s);"
+        sql = "INSERT INTO conferences(title, summary, date, hour, " \
+              "creation_date, personid) VALUES (%s, %s, %s, %s, %s, %s);"
         arguments = (title, summary, date, hour, self.creation_date, speaker,)
         self.db.cursor.execute(sql, arguments)
         self.db.connection.commit()
@@ -22,15 +23,17 @@ class Managesconferences():
     def delete_speakers(self, id):
         """method for delete conferences in bdd with this personal id"""
         self.db.initialize_connection()
-        sql = "DELETE FROM speakers WHERE id = %s;"
+        sql = "DELETE FROM speakers WHERE personid = %s;"
         arguments = (id)
         self.db.cursor.execute(sql, arguments)
         self.db.connection.commit()
         self.db.close_connection()
 
     def show_conferences(self):
-        """method for display all conferences"""
-        sql = "SELECT * FROM conferences;"
+        """method for display all conferences and auto with join sql"""
+        sql = "SELECT speakers.name, speakers.lastname, title, date, hour, summary " \
+              "FROM conferences INNER JOIN speakers " \
+              "ON conferences.speaker_id = speakers.id;"
         self.db.initialize_connection()
         self.db.cursor.execute(sql,)
         datta = self.db.cursor.fetchall()

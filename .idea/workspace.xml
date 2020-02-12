@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85192f7f-b667-4273-8208-c293f9286949" name="Default Changelist" comment="" />
+    <list default="true" id="85192f7f-b667-4273-8208-c293f9286949" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/conferencesentities.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/conferencesentities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/manage_conferences.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/manage_conferences.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/manage_speakers.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/manage_speakers.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1XfAh2DpamQljukEJxhyCW3eAcv" />
   <component name="ProjectViewState">
@@ -15,7 +24,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -27,12 +38,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../conferences-calendar" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../conferences-calendar/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -57,7 +68,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581426890662</updated>
-      <workItem from="1581426912066" duration="11971000" />
+      <workItem from="1581426912066" duration="12316000" />
+      <workItem from="1581486335808" duration="7266000" />
     </task>
     <servers />
   </component>
@@ -65,32 +77,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="569" key="GridCell.Tab.0.bottom" timestamp="1581446908851">
+    <state width="1238" height="569" key="GridCell.Tab.0.bottom" timestamp="1581495031091">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="504" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1581440678817" />
-    <state width="1238" height="569" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1581446908851" />
-    <state width="1238" height="569" key="GridCell.Tab.0.center" timestamp="1581446908849">
+    <state width="1238" height="569" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1581495031091" />
+    <state width="1238" height="569" key="GridCell.Tab.0.center" timestamp="1581495031090">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="504" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1581440678816" />
-    <state width="1238" height="569" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1581446908849" />
-    <state width="1238" height="569" key="GridCell.Tab.0.left" timestamp="1581446908848">
+    <state width="1238" height="569" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1581495031090" />
+    <state width="1238" height="569" key="GridCell.Tab.0.left" timestamp="1581495031089">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="504" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1581440678815" />
-    <state width="1238" height="569" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1581446908848" />
-    <state width="1238" height="569" key="GridCell.Tab.0.right" timestamp="1581446908850">
+    <state width="1238" height="569" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1581495031089" />
+    <state width="1238" height="569" key="GridCell.Tab.0.right" timestamp="1581495031090">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="504" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1581440678817" />
-    <state width="1238" height="569" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1581446908850" />
+    <state width="1238" height="569" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1581495031090" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1581441524349">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1581441524349" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/conderences_calendar$main.coverage" NAME="main Coverage Results" MODIFIED="1581446900146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../conferences-calendar" />
+    <SUITE FILE_PATH="coverage/conderences_calendar$main.coverage" NAME="main Coverage Results" MODIFIED="1581447005824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/conferences_calendar$main.coverage" NAME="main Coverage Results" MODIFIED="1581495010204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

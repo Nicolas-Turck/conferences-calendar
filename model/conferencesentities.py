@@ -3,8 +3,8 @@ class Hydrate():
     """class for hydrate attribut before print them"""
     def __init__(self, datta = False):
         """method for initialise atrributs """
-        #self.name= None
-        #self.lastname = None
+        self.name= None
+        self.lastname = None
         self.title = None
         self.date = None
         self.hour = None
@@ -18,5 +18,6 @@ class Hydrate():
                 setattr(self, key_name, value_name)
 
     def __str__(self):
-        """method for display elem of city"""
-        return "\033[34mtitle: {}\ndate: {}, hour: {}\nsummary: {}\033[0m" .format(self.title, self.date, self.hour, self.summary)
+        """method for display elem of two tables in bdd"""
+        return "\033[34mspeakers {}, {}\ntitle: {}\ndate: {}, hour: {}\nsummary: {}\033[0m" \
+            .format(self.name, self.lastname, self.title, self.date, self.hour, self.summary)

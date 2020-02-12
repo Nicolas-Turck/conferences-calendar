@@ -18,8 +18,9 @@ class Managespeakers():
     def delete_speakers(self, id):
         """method for delete speaker in bdd with this personal id"""
         self.db.initialize_connection()
-        sql = "DELETE FROM speakers WHERE id = %s;"
-        arguments = (id)
+        sql = "DELETE  FROM speakers " \
+              "WHERE personid = %s;"
+        arguments = (id,)
         self.db.cursor.execute(sql, arguments)
         self.db.connection.commit()
         self.db.close_connection()
