@@ -26,7 +26,7 @@ class Managespeakers():
         self.db.close_connection()
 
     def show_speakers(self):
-        """method for display all speakers"""
+        """method for display all speakers if status is True"""
         sql = "SELECT * FROM speakers WHERE status = True;"
         self.db.initialize_connection()
         self.db.cursor.execute(sql,)

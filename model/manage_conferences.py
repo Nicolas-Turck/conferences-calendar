@@ -31,9 +31,9 @@ class Managesconferences():
 
     def show_conferences(self):
         """method for display all conferences and auto with join sql"""
-        sql = "SELECT speakers.name, speakers.lastname, title, date, hour, summary " \
-              "FROM conferences INNER JOIN speakers " \
-              "ON conferences.speaker_id = speakers.id;"
+        sql = "SELECT c.*, s.name, s.lastname " \
+              "FROM conferences AS c INNER JOIN speakers AS s " \
+              "ON c.personid = s.personid;"
         self.db.initialize_connection()
         self.db.cursor.execute(sql,)
         datta = self.db.cursor.fetchall()
