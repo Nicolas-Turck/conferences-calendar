@@ -20,11 +20,11 @@ class Managesconferences():
         self.db.connection.commit()
         self.db.close_connection()
 
-    def delete_speakers(self, id):
+    def delete_conferences(self, id):
         """method for delete conferences in bdd with this personal id"""
         self.db.initialize_connection()
-        sql = "DELETE FROM speakers WHERE personid = %s;"
-        arguments = (id)
+        sql = "DELETE FROM conferences WHERE personid = %s;"
+        arguments = (id,)
         self.db.cursor.execute(sql, arguments)
         self.db.connection.commit()
         self.db.close_connection()

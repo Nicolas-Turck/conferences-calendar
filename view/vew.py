@@ -21,7 +21,6 @@ class Display():
                 id = input("\033[32menter speakers ID :\033[0m")
                 user.delete_speakers(id)
 
-
             if self.choice == "s":
                 datta = self.speakers.show_speakers()
                 if datta:
@@ -42,7 +41,8 @@ class Display():
                 speaker = input("\033[33menter speaker ID: \033[0m")
                 user.create_conferences(title, summary, date, hour, speaker)
             if self.choice == "d":
-                print("delette")
+                id = input("\033[33menter speakers ID :\033[0m")
+                user.delete_conferences(id)
 
             if self.choice == "s":
                 datta = self.conf.show_conferences()
