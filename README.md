@@ -1,6 +1,7 @@
 ## conferences calendar
-I instal the library psycopg2
+
 I created for this project
+I install the library psycopg2
 5 class in 3 folder "controler" "model" an "view"
 I create class "connection" for connect program with bdd with "psycopg2"
 I instantiate objets and attributes 
