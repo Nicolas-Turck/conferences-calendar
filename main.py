@@ -11,10 +11,7 @@ if __name__=='__main__':
                        "\n (q) for exit :\033[0m \n")
         if choice == "a":
             user.conferences_choice()
-
         if choice == "b":
             user.speakers_choice()
-
-
         if choice == "q":
             exit()

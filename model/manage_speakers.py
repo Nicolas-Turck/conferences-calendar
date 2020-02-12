@@ -1,7 +1,7 @@
-from model.speakersentities import *
+from controller.speakersentities import *
 from model.connection import *
 class Managespeakers():
-    """class for manage speakers """
+    """class for manage speakers create read delete CRUD """
     def __init__(self):
         self.status = True
         self.db = Connection()

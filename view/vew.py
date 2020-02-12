@@ -7,11 +7,12 @@ class Display():
         self.choice = None
         self.user = Managespeakers()
         self.users = Managesconferences()
+
+
     def speakers_choice(self):
         """method for ask user choice and got to method machingchoice """
-        #user = Managespeakers()
         while self.choice != "q":
-            self.choice = input("\033[35m(c) for create \n(d) for delete \n(s) for see:\033[0m")
+            self.choice = input("\033[35m(c) for create \n(d) for delete \n(s) for see \n(q) for exit:\033[0m")
             if self.choice == "c":
                 name = input("\033[32menter name:\033[0m")
                 lastname = input("\033[32menter lastname:\033[0m")
@@ -33,9 +34,8 @@ class Display():
                 exit()
     def conferences_choice(self):
         """method for ask user choice and got to method machingchoice """
-        #users = Managesconferences()
         while self.choice != "q":
-            self.choice = input("\033[35m(c) for create \n(d) for delete \n(s) for see\033[0m")
+            self.choice = input("\033[35m(c) for create \n(d) for delete \n(s) for see \n(q) for exit:\033[0m")
             if self.choice == "c":
                 title = input("\033[33menter title:\033[0m")
                 summary = input("\033[33menter summary:\033[0m")
@@ -43,6 +43,7 @@ class Display():
                 hour = input("\033[33menter hour \033[0m")
                 speaker = input("\033[33menter speaker ID: \033[0m")
                 self.users.create_conferences(title, summary, date, hour, speaker)
+
             if self.choice == "d":
                 id = input("\033[33menter speakers ID :\033[0m")
                 self.users.delete_conferences(id)

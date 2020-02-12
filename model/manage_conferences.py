@@ -1,7 +1,8 @@
 import datetime
 from model.connection import *
-from model.conferencesentities import *
+from controller.conferencesentities import *
 class Managesconferences():
+    """class for manage confernce create read delete CRUD"""
     def __init__(self):
         self.db = Connection()
         self.title = None
