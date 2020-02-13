@@ -1,6 +1,8 @@
 import datetime
 from model.connection import *
 from controller.conferencesentities import *
+import os
+import time
 class Managesconferences():
     """class for manage confernce create read delete CRUD"""
     def __init__(self):
@@ -8,6 +10,7 @@ class Managesconferences():
         self.creation_date = datetime.date.today()
         self.sql = ""
         self.arguments = ""
+
     def create_conferences(self, title, summary, date, hour, speaker):
         """method for add conferences in bdd"""
         self.db.initialize_connection()
@@ -17,15 +20,17 @@ class Managesconferences():
         self.db.cursor.execute(self.sql, self.arguments)
         self.db.connection.commit()
         self.db.close_connection()
+        print("\033[31mnew conferences create\033[0m")
 
     def delete_conferences(self, id):
         """method for delete conferences in bdd with this personal id"""
         self.db.initialize_connection()
-        self.sql = "DELETE FROM conferences WHERE personid = %s;"
+        self.sql = "DELETE FROM conferences WHERE id = %s;"
         self.arguments = (id,)
         self.db.cursor.execute(self.sql, self.arguments)
         self.db.connection.commit()
         self.db.close_connection()
+        print("\033[31mconferences deletted\033[0m")
 
     def show_conferences(self):
         """method for display all conferences and auto with join sql"""
@@ -39,3 +44,13 @@ class Managesconferences():
         for key, value in enumerate(datta):
             datta[key] = Hydrate(value)
         return datta
+
+    def update_confernces(self, column, datta, id ):
+        """"method for modify datta in bdd after connect to bdd"""
+        self.choice.initialize_connection()
+        self.sql = "UPDATE conf set " + column + " = %s WHERE id = %s ;"
+        self.arguments = (datta, id)
+        self.choice.cursor.execute(self.sql, self.arguments)
+        self.choice.connection.commit()
+        self.choice.close_connection()
+        print("\033[31mdnew datta saved\033[0m")

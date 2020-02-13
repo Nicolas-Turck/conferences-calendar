@@ -1,4 +1,5 @@
 import os
+import time
 from view.vew import *
 user = Display()
 
@@ -9,6 +10,8 @@ if __name__=='__main__':
                        "(a) for manage confereces "
                        "\n (b) for manage speakers "
                        "\n (q) for exit :\033[0m \n")
+        os.system('cls' if os.name == 'nt' else 'clear')
+        time.sleep(1)
         if choice == "a":
             user.conferences_choice()
         if choice == "b":

@@ -1,5 +1,7 @@
 from controller.speakersentities import *
 from model.connection import *
+import os
+import time
 class Managespeakers():
     """class for manage speakers create read delete CRUD """
     def __init__(self):
@@ -15,6 +17,7 @@ class Managespeakers():
         self.db.cursor.execute(self.sql, self.arguments)
         self.db.connection.commit()
         self.db.close_connection()
+        print("\033[31mnew speakers create\033[0m")
         return
 
     def delete_speakers(self, id):
@@ -26,6 +29,7 @@ class Managespeakers():
         self.db.cursor.execute(self.sql, self.arguments)
         self.db.connection.commit()
         self.db.close_connection()
+        print("\033[31mspeakers deletted\033[0m")
 
     def show_speakers(self):
         """method for display all speakers if status is True"""
