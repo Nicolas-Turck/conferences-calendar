@@ -1,6 +1,7 @@
 from model.manage_speakers import *
 from model.manage_conferences import *
 class Display():
+    """class for display menu of speakers and conference and purpose choice"""
     speakers = Managespeakers()
     conf = Managesconferences()
     def __init__(self):
